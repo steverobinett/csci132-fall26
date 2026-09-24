@@ -17,5 +17,5 @@ def base_converter(decimal_num, base):
     return new_string
 
 
-# print(base_converter(25, 2))
-print(base_converter(26, 16))
+print(base_converter(25, 3))
+# print(base_converter(26, 16))

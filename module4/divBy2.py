@@ -14,5 +14,5 @@ def divide_by_2(decimal_num):
 
     return bin_string
 
-print(divide_by_2(7))
+print(divide_by_2(32))
 # print(divide_by_2(31))
