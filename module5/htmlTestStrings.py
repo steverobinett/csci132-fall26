@@ -1,4 +1,4 @@
-test_balanced = """<html>
+test_balanced = '''<html>
    <head>
       <title>
          Example
@@ -6,11 +6,12 @@ test_balanced = """<html>
    </head>
  
    <body>
-      <h1>Hello, world</h1>
+      <h1> Hello, world </h1>
    </body>
 </html>
-"""
-   
+'''
+i = test_balanced.index('/')
+print(i)
 test_mismatch ="""<html>
    <body>
       <h1>Hello, world</h2>
