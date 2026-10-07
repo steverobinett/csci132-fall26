@@ -40,7 +40,26 @@ class UnorderedList:
         temp = Node(item)
         temp.set_next(self.head)
         self.head = temp
-
+        
+    def search(self, item):
+        current = self.head
+        while current is not None:
+            if current.data == item:
+                return True
+            else:
+                current = current.next
+        return False
+    
+    def remove(self):
+        pass
+    
+    def size(self):
+        pass
+    
+    def append(self, item):
+        pass
+    
+    #insert, index, pop
 
 # helper for printing/development
 def printUnord(theList):   
