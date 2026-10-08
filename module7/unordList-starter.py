@@ -1,3 +1,6 @@
+# This is the starter file for the Unordered List Assignment
+
+
 class Node:
     """A node of a linked list"""
 
@@ -27,20 +30,21 @@ class Node:
 
     def __str__(self):
         """String"""
-    
+
+
 class UnorderedList:
 
     def __init__(self):
         self.head = None
-        
+
     def is_empty(self):
         return self.head == None
-    
-    def add(self,item):
+
+    def add(self, item):
         temp = Node(item)
         temp.set_next(self.head)
         self.head = temp
-        
+
     def search(self, item):
         current = self.head
         while current is not None:
@@ -49,56 +53,39 @@ class UnorderedList:
             else:
                 current = current.next
         return False
-    
-    def remove(self,item):
-        current = self.head
-        previous = None
-        
-        while current is not None:
-            if current.data == item:
-                break
-            previous = current
-            current = current.next
-            
-        if current is None:
-            raise ValueError(f'{item} is not in the list')
-        if previous is None:
-            self.head = current.next
-        else:
-            previous.next = current.next
-    
+
+    def remove(self, item):
+        pass
+
     def size(self):
         pass
-    
+
     def append(self, item):
         pass
-    
-    
+
+    def insert(self, pos, item):
+        pass
+
+    def index(self, item):
+        pass
+
+    def pop(self):
+        pass
+
 
 # helper for printing/development
-def printUnord(theList):   
-    
+def printUnord(theList):
     current = theList.head
-    
     while current is not None:
-        print(f'{str(current.get_data())} ',end='')
+        print(f"{str(current.get_data())} ", end="")
         current = current.next
-    
+
+
 def main():
-    
+
     myList = UnorderedList()
-    
-    myList.add(31)
-    myList.add(77)
-    myList.add(17)
-    myList.add(93)
-    myList.add(26)
-    myList.add(54)
-    
-    # myList.remove(77)
-    # myList.remove(54)
-    myList.remove(31)
-    printUnord(myList)
-    
+
+    # add test cases for each method here
+
+
 main()
-    
